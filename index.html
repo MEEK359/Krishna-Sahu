@@ -191,10 +191,50 @@
         /* MOBILE */
         @media (max-width: 768px) {
             .hero {
+                min-height: auto;
+                padding: 60px 6% 40px;
                 flex-direction: column;
-                padding: 60px 6%;
+                gap: 18px;
                 text-align: center;
             }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 2.4rem;
+                margin-bottom: 14px;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+            }
+
+            .floating-art {
+                position: relative;
+                width: 120px;
+                margin: 6px auto 0;
+                animation: none;
+            }
+
+            .art1, .art2 {
+                top: auto;
+                right: auto;
+            }
+
+            .art3 { display: none; }
+
+            .art-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .art-card img {
+                height: 200px;
+            }
+        }
 
             .hero-content h1 {
                 font-size: 2.2rem;
@@ -327,3 +367,4 @@
 
 </body>
 </html>
+
